@@ -9,7 +9,7 @@ namespace Udemy.Stackoverflow
             var post = new Post()
             {
                 Title = "Post1",
-                Description = "Decs1",
+                Description = "Desc1",
             };
 
             for (int i = 0; i < 10; i++)
@@ -25,11 +25,11 @@ namespace Udemy.Stackoverflow
                 }
                 catch (InvalidOperationException)
                 {
-                    Console.WriteLine("You cant downvote anymore");
+                    Output.Displaymessage("You can't downvote anymore");
                 }
             }
 
-            Console.WriteLine(post.GetCurrentVote());
+            Output.Displaymessage(string.Format("Total votes for the post is {0}", post.GetCurrentVote()));
             Console.ReadLine();
         }
     }
