@@ -8,7 +8,7 @@ namespace Udemy.Stopwatch
         {
             var stopwatch = new Stopwatch();
 
-            Output.DisplayMessage("Enter 1 to start stopwatch, 2 to stop stopwatch and 3 to exit");
+            Output.DisplayMessage("Enter 1 to start stopwatch, 2 to stop stopwatch and 3 to exit.");
             int input;
             do
             {
@@ -23,7 +23,7 @@ namespace Udemy.Stopwatch
                             case 1: stopwatch.Start();
                                 break;
                             case 2: stopwatch.Stop();
-                                Output.DisplayMessage("Duration is " + stopwatch.GetDuration());
+                                Output.DisplayMessage(string.Format("Duration is {0}", stopwatch.GetDuration()));
                                 break;
                             default:
                                 break;
@@ -31,12 +31,12 @@ namespace Udemy.Stopwatch
                     }
                     catch (InvalidOperationException)
                     {
-                        Output.DisplayMessage("You have selcted wrong option");
+                        Output.DisplayMessage("You have selected wrong option");
                     }
                 }
                 else
                 {
-                    Output.DisplayMessage("Ivalid input");
+                    Output.DisplayMessage("Invalid input");
                 }
 
             } while (input != 3);
