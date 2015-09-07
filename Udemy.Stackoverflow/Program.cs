@@ -8,8 +8,8 @@ namespace Udemy.Stackoverflow
         {
             var post = new Post()
             {
-                Title = "Post1",
-                Description = "Desc1",
+                Title = "Test Post",
+                Description = "New Description",
             };
 
             for (int i = 0; i < 10; i++)
