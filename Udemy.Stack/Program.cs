@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Udemy.Stack
 {
@@ -21,7 +17,7 @@ namespace Udemy.Stack
                 Console.WriteLine(stack.Pop());
                 Console.WriteLine(stack.Pop());
             }
-            catch (InvalidOperationException ex)
+            catch (InvalidOperationException)
             {
                 Console.WriteLine("inavlid opeartion");
             }
