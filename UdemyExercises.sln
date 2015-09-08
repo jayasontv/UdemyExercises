@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy.Stopwatch", "Udemy.St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy.Stack", "Udemy.Stack\Udemy.Stack.csproj", "{18C68F74-B762-4F8F-91DF-660EE314051A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy.DatabaseConnection", "Udemy.DatabaseConnection\Udemy.DatabaseConnection.csproj", "{3717ACD3-783C-48BD-95F2-2CF539CCA816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{18C68F74-B762-4F8F-91DF-660EE314051A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18C68F74-B762-4F8F-91DF-660EE314051A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18C68F74-B762-4F8F-91DF-660EE314051A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3717ACD3-783C-48BD-95F2-2CF539CCA816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3717ACD3-783C-48BD-95F2-2CF539CCA816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3717ACD3-783C-48BD-95F2-2CF539CCA816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3717ACD3-783C-48BD-95F2-2CF539CCA816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
