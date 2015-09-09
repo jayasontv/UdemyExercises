@@ -1,22 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using Udemy.WorkflowEngine.Interface;
 
 namespace Udemy.WorkflowEngine
 {
-    public class Workflow
+    public class Workflow : IWorkflow
     {
-        public IList<IActivity> Activities { get; private set; }
+        private readonly IList<IActivity> _activities;
 
         public Workflow()
         {
-            Activities = new List<IActivity>();
+            _activities = new List<IActivity>();
         }
 
         public void RegisterActivity(IActivity activity)
         {
-            Activities.Add(activity);
+            _activities.Add(activity);
+        }
+
+        public IEnumerable<IActivity> GetActivities()
+        {
+            return _activities;
         }
     }
 }

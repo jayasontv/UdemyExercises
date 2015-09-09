@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Udemy.WorkflowEngine.Interface;
 
 namespace Udemy.WorkflowEngine
 {
     public class WorkflowEngine
     {
-        public void Run(Workflow workflow)
+        public void Run(IWorkflow workflow)
         {
-            foreach (var activity in workflow.Activities)
+            foreach (var activity in workflow.GetActivities())
             {
                 activity.Execute();
             }

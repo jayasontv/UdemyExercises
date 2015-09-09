@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Udemy.WorkflowEngine.Interface;
 
 namespace Udemy.WorkflowEngine
 {
-    class UploadVideoActivity : IActivity
+    public class UploadVideoActivity : IActivity
     {
         public void Execute()
         {

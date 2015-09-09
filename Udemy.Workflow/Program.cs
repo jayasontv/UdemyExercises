@@ -13,6 +13,8 @@ namespace Udemy.WorkflowEngine
             Workflow workflow = new Workflow();
             workflow.RegisterActivity(new UploadVideoActivity());
             workflow.RegisterActivity(new WebServiceActivity());
+            workflow.RegisterActivity(new EmailActivity());
+            workflow.RegisterActivity(new StatusUpdateActivity());
 
             WorkflowEngine workflowEngine = new WorkflowEngine();
             workflowEngine.Run(workflow);

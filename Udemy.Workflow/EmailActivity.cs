@@ -3,11 +3,11 @@ using Udemy.WorkflowEngine.Interface;
 
 namespace Udemy.WorkflowEngine
 {
-    public class WebServiceActivity : IActivity
+    public class EmailActivity : IActivity
     {
         public void Execute()
         {
-            Console.WriteLine("Web service called");
+            Console.WriteLine("Email send");
         }
     }
 }
