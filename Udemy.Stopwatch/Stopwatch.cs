@@ -8,27 +8,27 @@ namespace Udemy.Stopwatch
 
         public DateTime EndTime { get; private set; }
 
-        public bool StopwatchStarted { get; private set; }
+        private bool _isStarted;
 
         public void Start()
         {
-            if (StopwatchStarted)
+            if (_isStarted)
             {
                 throw new InvalidOperationException();
             }
             else
             {
                 StartTime = DateTime.UtcNow;
-                StopwatchStarted = true;
+                _isStarted = true;
             }
         }
 
         public void Stop()
         {
-            if (StopwatchStarted)
+            if (_isStarted)
             {
                 EndTime = DateTime.UtcNow;
-                StopwatchStarted = false;
+                _isStarted = false;
             }
             else
             {

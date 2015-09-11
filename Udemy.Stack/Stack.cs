@@ -8,42 +8,37 @@ namespace Udemy.Stack
 {
     public class Stack
     {
-        private readonly List<object> stackObject;
+        private readonly List<object> _objects;
 
         public Stack()
         {
-            stackObject = new List<object>();
+            _objects = new List<object>();
         }
         public void Push(object obj)
         {
-            if (obj != null)
-            {
-                stackObject.Add(obj);
-            }
-            else
+            if (obj == null)
             {
                 throw new InvalidOperationException();
             }
+
+            _objects.Add(obj);
         }
 
         public object Pop()
         {
-            var itemCount = stackObject.Count;
-            if (itemCount == 0)
+            if (_objects.Count == 0)
             {
                 throw new InvalidOperationException();
             }
-            else
-            {
-                var lastItem = stackObject[itemCount - 1];
-                stackObject.RemoveAt(itemCount - 1);
-                return lastItem;
-            }
+
+            var lastItem = _objects[_objects.Count - 1];
+            _objects.RemoveAt(_objects.Count - 1);
+            return lastItem;
         }
 
         public void Clear()
         {
-            stackObject.Clear();
+            _objects.Clear();
         }
     }
 }
